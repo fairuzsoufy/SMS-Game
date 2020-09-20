@@ -57,7 +57,7 @@ $result = mysqli_query($conn, $sql);
                 var team_id = document.getElementById("team_id").value;
                 jQuery.ajax
                 ({
-                    url: "game.php",
+                    url: "backend.php",
                     data: 'method=show&team_id='+team_id,
                     type: "GET",
                     cache: false,
@@ -100,7 +100,7 @@ $result = mysqli_query($conn, $sql);
             var x = document.getElementById($id).value.toLowerCase();
             jQuery.ajax
             ({
-                url: "game.php",
+                url: "backend.php",
                 data: 'method=checkinBack&x='+$id,
                 type: "GET",
                 cache: false,
@@ -117,7 +117,7 @@ $result = mysqli_query($conn, $sql);
                         //turn status to 1
                         jQuery.ajax
                         ({
-                            url: "game.php",
+                            url: "backend.php",
                             data: 'method=turnStatus&x='+$id,
                             type: "GET",
                             cache: false,
@@ -155,7 +155,7 @@ $result = mysqli_query($conn, $sql);
     <body>
         <div class="login-area login-s2">
             <div class="container" style='text-align:center;'>
-                <div class="login-box ptb--100" style="background-image: url('web.jpg');   background-size: 550px 650px;
+                <div class="login-box ptb--100" style="background-image: url('background.jpg');   background-size: 550px 650px;
                     background-repeat: no-repeat; background-position: center;">
 
                     <div id="first" style="width:100%; margin:auto; ">
